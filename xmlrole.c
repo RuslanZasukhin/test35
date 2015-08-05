@@ -178,7 +178,7 @@ prolog1(PROLOG_STATE *state,
     state->handler = error;
     return XML_ROLE_INSTANCE_START;
   }
-  return common(state, tok);
+  return common(state, tok + 1);
 }
 
 static int PTRCALL
